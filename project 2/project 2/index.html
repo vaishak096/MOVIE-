@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="poster1.jpeg" alt="" width="50%">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#trivia">Trivia Quiz</a></li>
+                <li><a href="#quotes">Quote of the Day</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    <section id="home">
+        <h2>kantara</h2>
+
+        <div class="movie-posters">
+            <img src="kantara.jpg" alt="Movie Poster 1" class="poster">
+            <img src="kantara 1.jpg".jpg" alt="Movie Poster 2" class="poster">
+            <img src="kantara 2.jpg" alt="Movie Poster 3" class="poster">
+            <img src="kantara 3.jpg" alt="movie poster 4" class="poster">
+           
+
+        </div>
+    </section>
+
+    <section id="characters">
+        <h2>Character Bios</h2>
+        <div class="image-container">
+            <div class="image-box">
+              <img src="rishab.jpeg" alt="iron man" >
+              <div class="overlay">
+                <div class="text">KAADUBETTU SHIVA</div>
+              </div>
+            </div>
+        
+            <div class="image-box">
+              <img src="KISHORE.jpeg" alt="THOR">
+              <div class="overlay">
+                <div class="text">MURALI</div>
+              </div>
+            </div>
+        
+            <div class="image-box">
+              <img src="SAPTHAMI.jpeg" alt="BLACK PANTHER">
+              <div class="overlay">
+                <div class="text">LEELA</div>
+              </div>
+            </div>
+            <div class="image-box">
+                <img src="achuyth.jpeg" alt="CAP">
+                <div class="overlay">
+                  <div class="text">DEVENDRA SUTHOORU</div>
+                </div>
+              </div>
+              
+    </section>
+
+    <section id="trailers">
+
+        <h2>Movie Trailers</h2>
+        <iframe src="https://www.youtube.com/embed/Frp0zC4643U" frameborder="0" allowfullscreen></iframe>
+        
+    </section>
+
+    <section id="quotes">
+        <h2>Quote of the Day</h2>
+        <p id="quote" ></p>
+    </section>
+
+    <section id="trivia">
+        <h2>Trivia Quiz</h2>
+<button onclick="startQuiz()" class="cssbuttons-io-button">
+  Start Quiz
+  <div class="icon">
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+     
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+
+        <div id="quiz-container" style="display:none;">
+            <p id="question"></p>
+            <button onclick="checkAnswer(true)" class="button">True</button>
+            <button onclick="checkAnswer(false)" class="button">False</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; MAYUR S</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
